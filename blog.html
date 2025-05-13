@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Horizon Escapes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    Horizon travel
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reveiws.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html#packages" class="btn btn-cta-nav d-none d-lg-inline-block">Book now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-hero-section d-flex align-items-center text-center text-white" style="background-image: linear-gradient(rgba(10, 36, 99, 0.75), rgba(10, 36, 99, 0.85)), url('eco traveller.webp');"> 
+            <div class="container">
+                <h1 class="display-4 fw-bold animate-on-scroll">Travel Insights & Stories</h1>
+                <p class="lead my-3 animate-on-scroll" data-animation-delay="0.2s">Inspiration for your next journey, tips, and travel tales.</p>
+            </div>
+        </section>
+        
+        <section class="filter-section py-4 bg-light-alt">
+            <div class="container">
+                <form class="row g-3 align-items-center animate-on-scroll">
+                    <div class="col-md-4">
+                        <select class="form-select">
+                            <option selected>All Categories</option>
+                            <option value="tips">Travel Tips</option>
+                            <option value="guides">Destination Guides</option>
+                            <option value="stories">Traveler Stories</option>
+                            <option value="news">Industry News</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Search blog posts...">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-primary-alt w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="all-blog-posts" class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-post-card animate-on-scroll h-100">
+                            <img src="boat.webp" alt="Packing Tips" class="img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Top 10 Packing Hacks for Smarter Travel</h5>
+                                <p class="card-text text-muted small">By Admin | Oct 26, 2023</p>
+                                <p>Travel lighter and smarter with these essential packing tips for any destination.</p>
+                                <a href="blog.html" class="btn btn-link-alt mt-auto">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-post-card animate-on-scroll h-100" data-animation-delay="0.1s">
+                            <img src="eco traveller.webp" alt="Eco Travel" class="img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Sustainable Travel: How to Explore Responsibly</h5>
+                                <p class="card-text text-muted small">By Jane R. | Oct 20, 2023</p>
+                                <p>Discover ways to minimize your footprint and support local communities on your travels.</p>
+                                <a href="blog.html" class="btn btn-link-alt mt-auto">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                         <div class="blog-post-card animate-on-scroll h-100" data-animation-delay="0.2s">
+                            <img src="beach.webp" alt="Solo Travel" class="img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">The Ultimate Guide to Solo Female Travel</h5>
+                                <p class="card-text text-muted small">By Alex P. | Oct 15, 2023</p>
+                                <p>Empowering tips and destination ideas for women embarking on solo adventures.</p>
+                                <a href="blog.html" class="btn btn-link-alt mt-auto">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="blog-post-card animate-on-scroll h-100" data-animation-delay="0.3s">
+                            <img src="paris.avif" alt="Paris Guide" class="img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">A First-Timer's Guide to Paris: Beyond the Eiffel Tower</h5>
+                                <p class="card-text text-muted small">By Admin | Nov 02, 2023</p>
+                                <p>Explore charming neighborhoods, hidden cafes, and artistic treasures in the City of Lights.</p>
+                                <a href="blog.html" class="btn btn-link-alt mt-auto">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="blog-post-card animate-on-scroll h-100" data-animation-delay="0.4s">
+                            <img src="japan.avif" alt="Japan Food" class="img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Culinary Journey Through Japan: Must-Try Dishes</h5>
+                                <p class="card-text text-muted small">By Kenji T. | Nov 05, 2023</p>
+                                <p>From sushi to ramen, discover the rich and diverse flavors of Japanese cuisine.</p>
+                                <a href="blog.html" class="btn btn-link-alt mt-auto">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="blog-post-card animate-on-scroll h-100" data-animation-delay="0.5s">
+                            <img src="Serene Mountain.avif" alt="Hiking Tips" class="img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Essential Hiking Gear for Mountain Adventures</h5>
+                                <p class="card-text text-muted small">By Emily B. | Nov 10, 2023</p>
+                                <p>Prepare for your next trek with this guide to essential hiking equipment and safety tips.</p>
+                                <a href="blog.html" class="btn btn-link-alt mt-auto">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <nav aria-label="Blog navigation" class="mt-5 animate-on-scroll">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact-footer" class="site-footer text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><h5 class="footer-heading">Horizon Escapes</h5><p class="small">Your gateway to extraordinary travel.</p><p class="small">© <span id="currentYear"></span> Horizon Escapes. All Rights Reserved.</p></div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0"><h5 class="footer-heading">Company</h5><ul class="list-unstyled footer-links"><li><a href="index.html#hero">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+                <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0"><h5 class="footer-heading">Support</h5><ul class="list-unstyled footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="#">FAQs</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+                <div class="col-lg-3 col-md-12 text-lg-end"><h5 class="footer-heading">Connect</h5><div class="social-icons-alt"><a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a><a href="#" class="me-2"><i class="fab fa-twitter"></i></a><a href="#" class="me-2"><i class="fab fa-instagram"></i></a></div><p class="small mt-3">Email: info@horizonescapes.com</p></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

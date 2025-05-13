@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Horizon Escapes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    Horizon travel
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reveiws.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html#packages" class="btn btn-cta-nav d-none d-lg-inline-block">Book now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page-content">
+        <section class="page-hero-section d-flex align-items-center text-center text-white" style="background-image: linear-gradient(rgba(10, 36, 99, 0.75), rgba(10, 36, 99, 0.85)), url('beach.webp');">
+            <div class="container">
+                <h1 class="display-4 fw-bold animate-on-scroll">Our Exclusive Travel Packages</h1>
+                <p class="lead my-3 animate-on-scroll" data-animation-delay="0.2s">Handcrafted deals for every type of traveler.</p>
+            </div>
+        </section>
+
+        <!-- Filter Section (Similar to destinations.html) -->
+        <section class="filter-section py-4 bg-light-alt">
+            <div class="container">
+                <form class="row g-3 align-items-center animate-on-scroll">
+                    <div class="col-md-3">
+                        <select class="form-select">
+                            <option selected>Package Type</option>
+                            <option value="romantic">Romantic Getaway</option>
+                            <option value="family">Family Fun</option>
+                            <option value="adventure">Adventure Seeker</option>
+                            <option value="luxury">Luxury Escape</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select">
+                            <option selected>Duration</option>
+                            <option value="short">Weekend (1-3 Days)</option>
+                            <option value="medium">1 Week (4-7 Days)</option>
+                            <option value="long">Extended (8+ Days)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Search by destination or keyword">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-primary-alt w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="all-packages" class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                     <!-- Package Card 1 (from index.html)  -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-card animate-on-scroll">
+                            <img src="paris.avif" class="package-image" alt="Italian Dream">
+                            <div class="package-body">
+                                <span class="package-badge">Bestseller</span>
+                                <h5 class="package-title">Italian Dream Escape</h5>
+                                <p class="package-duration"><i class="fas fa-clock me-2"></i>7 Days / 6 Nights</p>
+                                <p class="package-price">From $1,299</p>
+                                <a href="#" class="btn btn-primary-alt w-100">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Package Card 2 (from index.html) -->
+                     <div class="col-lg-4 col-md-6">
+                        <div class="package-card animate-on-scroll" data-animation-delay="0.1s">
+                            <img src="japan.avif" class="package-image" alt="Japan Discovery">
+                            <div class="package-body">
+                                <h5 class="package-title">Colors of Japan</h5>
+                                <p class="package-duration"><i class="fas fa-clock me-2"></i>10 Days / 9 Nights</p>
+                                <p class="package-price">From $2,450</p>
+                                <a href="#" class="btn btn-primary-alt w-100">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                  <!-- Package Card 3 (from index.html) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-card animate-on-scroll" data-animation-delay="0.2s">
+                            <img src="duabi.avif" class="package-image" alt="Safari Adventure">
+                            <div class="package-body">
+                                <span class="package-badge hot-deal">Limited Time!</span>
+                                <h5 class="package-title">Wild Safari Adventure</h5>
+                                <p class="package-duration"><i class="fas fa-clock me-2"></i>5 Days / 4 Nights</p>
+                                <p class="package-price">From $999</p>
+                                <a href="#" class="btn btn-primary-alt w-100">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                   <!-- Add more package cards below, similar st?ructure -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-card animate-on-scroll" data-animation-delay="0.3s">
+                            <img src="Serene Mountain.avif" class="package-image" alt="Mountain Retreat">
+                            <div class="package-body">
+                                <h5 class="package-title">Alpine Mountain Retreat</h5>
+                                <p class="package-duration"><i class="fas fa-clock me-2"></i>4 Days / 3 Nights</p>
+                                <p class="package-price">From $750</p>
+                                <a href="#" class="btn btn-primary-alt w-100">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-card animate-on-scroll" data-animation-delay="0.4s">
+                            <img src="Azure.avif" class="package-image" alt="Coastal Bliss">
+                            <div class="package-body">
+                                 <span class="package-badge">New!</span>
+                                <h5 class="package-title">Tropical Coastal Bliss</h5>
+                                <p class="package-duration"><i class="fas fa-clock me-2"></i>8 Days / 7 Nights</p>
+                                <p class="package-price">From $1,800</p>
+                                <a href="#" class="btn btn-primary-alt w-100">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-card animate-on-scroll" data-animation-delay="0.5s">
+                            <img src="Vibrant City.avif" class="package-image" alt="City Wonders">
+                            <div class="package-body">
+                                <h5 class="package-title">Urban City Wonders Tour</h5>
+                                <p class="package-duration"><i class="fas fa-clock me-2"></i>3 Days / 2 Nights</p>
+                                <p class="package-price">From $550</p>
+                                <a href="#" class="btn btn-primary-alt w-100">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <nav aria-label="Packages navigation" class="mt-5 animate-on-scroll">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact-footer" class="site-footer text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><h5 class="footer-heading">Horizon Escapes</h5><p class="small">Your gateway to extraordinary travel.</p><p class="small">© <span id="currentYear"></span> Horizon Escapes. All Rights Reserved.</p></div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0"><h5 class="footer-heading">Company</h5><ul class="list-unstyled footer-links"><li><a href="index.html#hero">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+                <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0"><h5 class="footer-heading">Support</h5><ul class="list-unstyled footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="#">FAQs</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+                <div class="col-lg-3 col-md-12 text-lg-end"><h5 class="footer-heading">Connect</h5><div class="social-icons-alt"><a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a><a href="#" class="me-2"><i class="fab fa-twitter"></i></a><a href="#" class="me-2"><i class="fab fa-instagram"></i></a></div><p class="small mt-3">Email: info@horizonescapes.com</p></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

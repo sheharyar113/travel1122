@@ -1,0 +1,225 @@
+--- START OF FILE view-deal.html ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGE THE TITLE DYNAMICALLY IF POSSIBLE, OR USE A GENERIC ONE -->
+    <title>Package Details: Italian Dream Escape - Horizon Escapes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add specific styles for this page if needed */
+        .package-detail-hero {
+            padding: 4rem 0;
+            background-color: var(--light-bg-alt); /* Light background for the top section */
+        }
+        .package-detail-hero img {
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .details-sidebar .card {
+            border: 1px solid #eee;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .itinerary-day {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #eee;
+        }
+        .itinerary-day:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .list-icon {
+            list-style: none;
+            padding-left: 0;
+        }
+        .list-icon li {
+            padding-left: 1.8em;
+            text-indent: -1.8em;
+            margin-bottom: 0.5rem;
+        }
+        .list-icon .fa-check { color: #28a745; margin-right: 0.5em; } /* Green check */
+        .list-icon .fa-times { color: #dc3545; margin-right: 0.5em; } /* Red times */
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Reusing the exact same navbar from other pages -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    Horizon travel
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <!-- Make Packages link active potentially -->
+                        <li class="nav-item"><a class="nav-link active" href="packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reveiws.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html#packages" class="btn btn-cta-nav d-none d-lg-inline-block">Book now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <!-- Package Detail Hero Section -->
+        <section class="package-detail-hero">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7 animate-on-scroll">
+                        <!-- Package Main Image -->
+                        <img src="paris.avif" alt="Italian Dream Escape" class="img-fluid w-100">
+                    </div>
+                    <div class="col-lg-5 animate-on-scroll" data-animation-delay="0.1s">
+                       
+                        <h1 class="display-5 fw-bold mb-3">Italian Dream Escape</h1>
+                        <p class="lead mb-3">Experience the magic of Italy, from the ancient wonders of Rome to the romantic canals of Venice and the artistic heart of Florence.</p>
+                         <div class="d-flex align-items-center mb-2 text-muted">
+                            <i class="fas fa-clock me-2"></i> 7 Days / 6 Nights
+                        </div>
+                        <div class="d-flex align-items-center text-muted">
+                           <i class="fas fa-map-marker-alt me-2"></i> Rome, Florence, Venice
+                        </div>
+                        <p class="package-price fs-2 mt-3">From $1,299</p>
+                         <a href="#booking-options" class="btn btn-primary-alt btn-lg mt-2">Check Availability & Book</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Package Details Content Section -->
+        <section id="package-details-content" class="py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Main Details Column -->
+                    <div class="col-lg-8 animate-on-scroll" data-animation-delay="0.2s">
+                        <h2 class="section-title text-start mb-4">Package Overview</h2>
+                        <p>Embark on an unforgettable journey through the heart of Italy. This curated 7-day escape blends iconic landmarks with authentic cultural experiences. Wander through Roman ruins, marvel at Renaissance masterpieces in Florence, and glide along the enchanting canals of Venice. Perfect for first-time visitors and seasoned travelers alike, this package offers comfortable accommodations, guided tours, and ample free time to explore at your own pace.</p>
+                        <hr class="my-4">
+
+                        <h3 class="mb-4">Itinerary Highlights</h3>
+                        <div class="itinerary">
+                            <div class="itinerary-day">
+                                <h5>Day 1: Arrival in Rome & Ancient Wonders</h5>
+                                <p>Arrive in Rome, transfer to your hotel. Afternoon guided tour of the Colosseum, Roman Forum, and Palatine Hill. Evening at leisure.</p>
+                            </div>
+                            <div class="itinerary-day">
+                                <h5>Day 2: Vatican City & Roman Charm</h5>
+                                <p>Morning visit to Vatican City, including St. Peter's Basilica and the Vatican Museums (Sistine Chapel). Afternoon free to explore Trastevere or toss a coin in the Trevi Fountain.</p>
+                            </div>
+                            <div class="itinerary-day">
+                                <h5>Day 3: High-Speed Train to Florence & Renaissance Art</h5>
+                                <p>Travel by high-speed train to Florence. Check into your hotel. Afternoon walking tour including the Duomo, Ponte Vecchio, and Piazza della Signoria. Skip-the-line entry to the Accademia Gallery (David).</p>
+                            </div>
+                            <div class="itinerary-day">
+                                <h5>Day 4: Florence & Tuscan Flavors (Optional Tour)</h5>
+                                <p>Day at leisure in Florence to explore the Uffizi Gallery, climb Giotto's Bell Tower, or shop for leather goods. Optional afternoon tour to a Tuscan winery for tasting.</p>
+                            </div>
+                             <div class="itinerary-day">
+                                <h5>Day 5: Journey to Venice & Canal Charm</h5>
+                                <p>Travel by train to Venice. Transfer to your hotel via water taxi (what an arrival!). Afternoon guided tour of St. Mark's Square, St. Mark's Basilica, and the Doge's Palace.</p>
+                            </div>
+                             <div class="itinerary-day">
+                                <h5>Day 6: Venetian Gondola Ride & Islands (Optional)</h5>
+                                <p>Morning gondola ride through the charming canals. Afternoon free to explore hidden corners, visit Rialto Market, or take an optional boat trip to Murano and Burano islands.</p>
+                            </div>
+                             <div class="itinerary-day">
+                                <h5>Day 7: Departure</h5>
+                                <p>Enjoy a final Italian breakfast before transferring to Venice Marco Polo Airport (VCE) for your departure.</p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+
+                        <h3 class="mb-3">What's Included</h3>
+                        <ul class="list-icon mb-4">
+                            <li><i class="fas fa-check"></i>Accommodation for 6 nights in centrally located 3/4-star hotels.</li>
+                            <li><i class="fas fa-check"></i>Daily breakfast at hotels.</li>
+                            <li><i class="fas fa-check"></i>High-speed train tickets: Rome to Florence, Florence to Venice.</li>
+                            <li><i class="fas fa-check"></i>Guided tours as mentioned in the itinerary (Rome, Florence, Venice).</li>
+                            <li><i class="fas fa-check"></i>Skip-the-line entrance fees for Colosseum/Forum, Vatican Museums, Accademia Gallery.</li>
+                            <li><i class="fas fa-check"></i>Gondola ride in Venice.</li>
+                            <li><i class="fas fa-check"></i>Airport/hotel transfers as specified (Arrival Rome, Departure Venice).</li>
+                            <li><i class="fas fa-check"></i>Local taxes and service charges.</li>
+                        </ul>
+
+                        <h3 class="mb-3">What's Not Included</h3>
+                         <ul class="list-icon">
+                            <li><i class="fas fa-times"></i>International airfare to Rome / from Venice.</li>
+                            <li><i class="fas fa-times"></i>Lunches, dinners, and drinks (unless specified).</li>
+                            <li><i class="fas fa-times"></i>Optional tours and activities (Tuscan winery, Murano/Burano trip).</li>
+                            <li><i class="fas fa-times"></i>Travel insurance (highly recommended).</li>
+                            <li><i class="fas fa-times"></i>City taxes (payable locally at hotels, typically €2-€6 per person/night).</li>
+                            <li><i class="fas fa-times"></i>Personal expenses, tips, and gratuities.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Sidebar Column -->
+                    <div class="col-lg-4 details-sidebar" id="booking-options">
+                         <div class="card sticky-top animate-on-scroll" data-animation-delay="0.3s" style="top: calc(var(--navbar-height) + 20px);"> <!-- Adjust top offset -->
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">Book Your Italian Escape</h4>
+                                <p class="package-price fs-3 mb-3">From $1,299 <span class="fs-6 text-muted">/ person</span></p>
+                                <form action="contact.html" method="get"> <!-- Or link to a dedicated booking form/system -->
+                                     <div class="mb-3">
+                                        <label for="travelDate" class="form-label small">Preferred Travel Month</label>
+                                        <input type="month" class="form-control" id="travelDate">
+                                    </div>
+                                     <div class="mb-3">
+                                        <label for="numTravelers" class="form-label small">Number of Travelers</label>
+                                        <select class="form-select" id="numTravelers">
+                                            <option selected value="1">1 Adult</option>
+                                            <option value="2">2 Adults</option>
+                                            <option value="3">3 Adults</option>
+                                            <option value="4">4 Adults</option>
+                                            <option value="custom">More/Custom</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary-alt w-100 btn-lg mb-3">Request Booking / Enquire</button>
+                                </form>
+                                <p class="small text-center text-muted">Or call us at <a href="tel:+1234567890">03146514273</a></p>
+                                <hr>
+                                <p class="small"><strong>Need Customization?</strong> We can tailor this trip to your preferences. <a href="contact.html">Contact us</a> for details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact-footer" class="site-footer text-white py-5">
+        <!-- Reusing the exact same footer from other pages -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><h5 class="footer-heading">Horizon Escapes</h5><p class="small">Your gateway to extraordinary travel.</p><p class="small">© <span id="currentYear"></span> Horizon Escapes. All Rights Reserved.</p></div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0"><h5 class="footer-heading">Company</h5><ul class="list-unstyled footer-links"><li><a href="index.html#hero">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+                <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0"><h5 class="footer-heading">Support</h5><ul class="list-unstyled footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="#">FAQs</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+                <div class="col-lg-3 col-md-12 text-lg-end"><h5 class="footer-heading">Connect</h5><div class="social-icons-alt"><a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a><a href="#" class="me-2"><i class="fab fa-twitter"></i></a><a href="#" class="me-2"><i class="fab fa-instagram"></i></a></div><p class="small mt-3">Email: info@horizonescapes.com</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+--- END OF FILE view-deal.html ---
